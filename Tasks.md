@@ -1,0 +1,6 @@
+- [] Add fonts
+- [] Add font sizes
+- [] Build navbar
+- [] Add colors
+- []
+- []
