@@ -13,7 +13,6 @@ const Layout = ({ children }: LayoutProps) => {
         <>
 
             {children}
-            <Footer />
         </>
     );
 };

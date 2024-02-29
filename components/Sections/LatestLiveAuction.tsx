@@ -21,13 +21,13 @@ const LatestLiveAuction = (props: Props) => {
                 infinite
             >
                 <Slider className="">
-                    <Slide index={0}><LiveAuctionCard /></Slide>
-                    <Slide index={1}><LiveAuctionCard /></Slide>
-                    <Slide index={2}><LiveAuctionCard /></Slide>
-                    <Slide index={3}><LiveAuctionCard /></Slide>
-                    <Slide index={4}><LiveAuctionCard /></Slide>
-                    <Slide index={5}><LiveAuctionCard /></Slide>
-                    <Slide index={6}><LiveAuctionCard /></Slide>
+                    <Slide index={0}><LiveAuctionCard src={'/img/Itemcard-img.png'} /></Slide>
+                    <Slide index={1}><LiveAuctionCard src={'/img/slider/image.png'} /></Slide>
+                    <Slide index={2}><LiveAuctionCard src="/img/slider/img2.png" /></Slide>
+                    <Slide index={3}><LiveAuctionCard src={'/img/slider/img3.png'} /></Slide>
+                    <Slide index={4}><LiveAuctionCard src="/img/slider/img4.png" /></Slide>
+                    <Slide index={5}><LiveAuctionCard src={'/img/slider/img5.png'} /></Slide>
+                    <Slide index={6}><LiveAuctionCard src={'/img/slider/img2.png'} /></Slide>
                 </Slider>
 
                 <div className="relative">

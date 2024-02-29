@@ -5,9 +5,8 @@ import { useRouter } from 'next/router'
 
 type Props = {};
 
-const Navbar = ({ mode }: { mode?: string }) => {
+const Navbar = ({ isMenuOpen, setMenuOpen }: { isMenuOpen: boolean, setMenuOpen: any }) => {
     const router = useRouter();
-    const [isMenuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => {
         setMenuOpen(!isMenuOpen);

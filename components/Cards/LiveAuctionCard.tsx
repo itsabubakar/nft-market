@@ -1,12 +1,14 @@
 import Image from "next/image"
 import Link from "next/link"
 
-type Props = {}
-const LiveAuctionCard = (props: Props) => {
+type Props = {
+    src: string
+}
+const LiveAuctionCard = ({ src }: Props) => {
     return (
         <div className="px-3">
             <Link href={'nft'} className="max-w-[448px] p-6 border-white-dark border rounded-2xl">
-                <Image src={'/img/Itemcard-img.png'} width={400} height={520} alt="bidding card" />
+                <Image className="h-[520px]" src={src} width={400} height={520} alt="bidding card" />
                 <div className="mt-6 flex justify-between">
                     <h6 className="font-sora max-w-[276px]">Tristique diam a, enim, eros tellus. Viverra etiam</h6>
                     <p className="font-sora bg-primary-purple-transparent text-primary-purple w-fit px-2 py-3 h-fit">1.1ETH</p>
