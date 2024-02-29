@@ -18,6 +18,7 @@ const config: Config = {
         'primary-purple-transparent': '#514CFF26',
         'primary-purple': '#514CFF',
         'white-dark': '#262840',
+        'light-dark': '#0607141A'
       }
     },
   },

@@ -1,4 +1,7 @@
 import Image from "next/image"
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import 'pure-react-carousel/dist/react-carousel.es.css';
+import LiveAuctionCard from "../Cards/LiveAuctionCard";
 
 type Props = {}
 const LatestLiveAuction = (props: Props) => {
@@ -7,33 +10,44 @@ const LatestLiveAuction = (props: Props) => {
             <h4 className="text-white font-sora text-center">Latest live auctions</h4>
             {/* Auctions */}
             <div className="pt-[72px] ">
-                <div className="w-[448px] p-6 border-white-dark border rounded-2xl">
-                    <Image src={'/img/Itemcard-img.png'} width={400} height={520} alt="bidding card" />
-                    <div className="mt-6 flex justify-between">
-                        <h6 className="font-sora max-w-[276px]">Tristique diam a, enim, eros tellus. Viverra etiam</h6>
-                        <p className="font-sora bg-primary-purple-transparent text-primary-purple w-fit px-2 py-3 h-fit">1.1ETH</p>
+                {/* Cards */}
+            </div>
+
+            <CarouselProvider
+                naturalSlideWidth={100}
+                naturalSlideHeight={180}
+                totalSlides={7}
+                visibleSlides={3}
+                infinite
+            >
+                <Slider className="">
+                    <Slide index={0}><LiveAuctionCard /></Slide>
+                    <Slide index={1}><LiveAuctionCard /></Slide>
+                    <Slide index={2}><LiveAuctionCard /></Slide>
+                    <Slide index={3}><LiveAuctionCard /></Slide>
+                    <Slide index={4}><LiveAuctionCard /></Slide>
+                    <Slide index={5}><LiveAuctionCard /></Slide>
+                    <Slide index={6}><LiveAuctionCard /></Slide>
+                </Slider>
+
+                <div className="relative">
+                    <div >
+                        <ButtonBack className="absolute left-16 -top-[500px] bg-light-dark py-5 px-8 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                        </svg>
+                        </ButtonBack>
+
                     </div>
-                    <div>
-                        <p className="font-inter text-sm py-6 border-b border-white-dark ">22:59 min left</p>
+                    <div >
 
-                        <div className="flex justify-between px-1 pt-5">
-                            {/* Bidder img */}
-                            <div className="flex">
-                                <Image src={'/img/01img.png'} width={32} height={32} alt='bidders' />
-                                <Image className="-ml-2" src={'/img/02img.png'} width={32} height={32} alt='bidders' />
-                                <Image className="-ml-2" src={'/img/03img.png'} width={32} height={32} alt='bidders' />
-                                <Image className="-ml-2" src={'/img/04img.png'} width={32} height={32} alt='bidders' />
-                            </div>
+                        <ButtonNext className="absolute right-16 -top-[500px] bg-light-dark py-5 px-8 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
 
-                            <p className="text-gray-white font-inter text-sm">101 people are bidding</p>
-                            <div className="flex gap-2 items-center">
-                                <p className="text-gray-white font-inter text-sm">570</p>
-                            </div>
-                        </div>
-
+                        </ButtonNext>
                     </div>
                 </div>
-            </div>
+            </CarouselProvider>
         </section>
     )
 }

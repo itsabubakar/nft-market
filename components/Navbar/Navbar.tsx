@@ -77,7 +77,7 @@ const Navbar = ({ mode }: { mode?: string }) => {
                     <Link className="border text-gray-white px-4 py-3 rounded-md border-white-dark hover:bg-white hover:text-black transition-colors" href="/contact">
                         Contact
                     </Link>
-                    <Link className="ml-8 px-4 py-3 rounded-md bg-blue-500 hover:bg-white hover:text-black transition-colors" href="/contact">
+                    <Link className="ml-8 px-4 py-3 rounded-md btn-gradient hover:bg-white hover:text-black transition-colors" href="/contact">
                         My account
                     </Link>
                 </div>

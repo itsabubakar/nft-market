@@ -1,6 +1,10 @@
-- [] Add fonts
-- [] Add font sizes
-- [] Build navbar
-- [] Add colors
-- []
+- [x] Add fonts
+- [x] Add font sizes
+- [x] Build navbar
+- [x] Add colors
+- [] Fix readme
+- [] Build nft preview 40 min
+- [] Add proper images 20 min
+- [] Add redux for keeping navbar state 30 min
+- [] Edit black out of hand 30 min
 - []

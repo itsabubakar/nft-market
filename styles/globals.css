@@ -10,8 +10,15 @@ body,
 
 }
 h1 {
-  font-size:  7.5rem; /* base size for h1 */;
+  font-size:  4.5rem; /* base size for h1 */;
 }
+@media (min-width: 920px) {
+  h1 {
+    font-size:  7.5rem; /* base size for h1 */;
+
+  }
+}
+
 
 h2 {
   font-size: 4rem;
@@ -25,4 +32,15 @@ h4 {
 
 h6 {
   font-size: 20px;
+}
+
+.review-bg {
+  background: linear-gradient(188.08deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 93.79%), linear-gradient(0deg, #060714, #060714);
+
+
+}
+
+.btn-gradient {
+  background: linear-gradient(104.42deg, #4745D0 0%, #2A27C9 60.23%);
+
 }

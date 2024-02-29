@@ -12,7 +12,7 @@ const TextWithImage = (props: Props) => {
                 <p className="font-inter pb-12 text-gray-white">Ut amet vulputate faucibus vitae semper eget auctor. Diam tempor pulvinar ultricies dolor feugiat aliquam commodo.</p>
 
                 <div className="flex gap-4 text-white">
-                    <Link className=" px-4 py-3 rounded-md bg-blue-500 hover:bg-white hover:text-black transition-colors" href="/contact">
+                    <Link className=" px-4 py-3 rounded-md btn-gradient hover:bg-white hover:text-black transition-colors" href="/contact">
                         Get started
                     </Link>
                     <Link className="border text-gray-white px-4 py-3 rounded-md border-white-dark hover:bg-white hover:text-black transition-colors" href="/contact">
