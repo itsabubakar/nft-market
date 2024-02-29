@@ -2,7 +2,7 @@
 - [x] Add font sizes
 - [x] Build navbar
 - [x] Add colors
-- [] Fix readme
+- [] Fix readme 5 mins
 - [] Build nft preview 40 min
 - [] Add proper images 20 min
 - [] Add redux for keeping navbar state 30 min

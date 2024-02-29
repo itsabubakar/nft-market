@@ -47,9 +47,9 @@ const Navbar = ({ mode }: { mode?: string }) => {
 
             {/* Large screen menu */}
             <div className="relative items-center max-w-6xl mx-auto py-6  px-6 xl:px-0 hidden lg:flex justify-between text-gray-white">
-                <div className="">
+                <Link href={'/'} className="">
                     <Image src={'/img/nft-logo.png'} alt="logo" width={34} height={34} />
-                </div>
+                </Link>
 
                 {/* Centered Navigation Links */}
                 <div className="flex justify-center items-center font-medium">
